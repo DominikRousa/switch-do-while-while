@@ -123,6 +123,7 @@ function fibonacci(){
 function checkNumber () {
 
     let text = "";
+    let count = 0
 
     do{
         let person = prompt("Please enter password:", "");
@@ -130,6 +131,9 @@ function checkNumber () {
           text = "User cancelled the prompt.";
         } else {
           text = person;
+          count = count + parseInt(text)
         }
-    } while ( text != "0")
+    } while ( text != "0" ){
+        console.log(count);
+    }
 }
